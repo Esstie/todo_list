@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Мій ToDo List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Заголовок -->
+        <header class="header">
+
+            <div class="icon">✓</div>
+
+            <div>
+                <h1>Мій ToDo List</h1>
+
+                <p>
+                    Плануйте свої завдання та виконуйте їх крок за кроком
+                </p>
+            </div>
+
+        </header>
+
+
+        <!-- Додавання нового завдання -->
+        <div class="input-container">
+
+            <input type="text"
+                   id="taskInput"
+                   placeholder="Введіть нове завдання..."
+                   maxlength="100"
+                   autocomplete="off">
+
+            <button id="addButton">
+                Додати
+            </button>
+
+        </div>
+
+
+        <!-- Статистика -->
+        <div class="tasks-header">
+
+            <div class="tasks-info">
+                <span id="taskCount">0 завдань</span>
+            </div>
+
+            <button id="clearCompleted"
+                    class="clear-button"
+                    type="button">
+                Очистити виконані
+            </button>
+
+        </div>
+
+
+        <!-- Список завдань -->
+        <section class="tasks-section">
+
+            <ul id="taskList"></ul>
+
+            <div id="emptyState" class="empty-state">
+
+                <div class="empty-icon">✓</div>
+
+                <h2>Завдань поки немає</h2>
+
+                <p>
+                    Додайте своє перше завдання вище
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
